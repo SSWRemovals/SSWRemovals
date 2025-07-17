@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SSW Removals & Waste Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f2f2f2; color:#333; }
+
+    header {
+      background:#1a73e8; color:#fff; padding:20px; text-align:center;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .logo {
+      font-size:2em;
+      font-weight:bold;
+    }
+    .logo .black { color:#000; }
+    .logo .blue { color:#1a73e8; }
+
+    section { padding:20px; }
+    .services ul { list-style:none; padding:0; }
+    .services li { background:#fff; margin-bottom:10px; padding:10px; border-left:5px solid #1a73e8; }
+
+    .contact { background:#fff; padding:20px; border-radius:5px; max-width:600px; margin:20px auto; }
+    form { display:flex; flex-direction:column; }
+    label { margin-top:10px; }
+    input, textarea, select { padding:10px; margin-top:5px; border:1px solid #ccc; border-radius:4px; }
+    button {
+      margin-top:15px; padding:10px; background:#1a73e8; color:#fff; border:none; border-radius:4px;
+      cursor:pointer;
+    }
+    button:hover { background:#155ab6; }
+
+    footer {
+      text-align:center; background:#1a73e8; color:#fff; padding:10px; margin-top:30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><span class="black">SSW</span> <span class="blue">Removals</span></div>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Waste and Junk Removal</li>
+      <li>Garden Waste Removal</li>
+      <li>House, Garage & Shed Clearances</li>
+      <li>Carpet and Shed Dismantling</li>
+      <li>House Removals</li>
+      <li>Man with Van Services</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Book a Service</h2>
+    <form action="https://formsubmit.co/sswremovals@outlook.com" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="phone" id="phone" required>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" name="date" id="date" required min="2025-07-17">
+
+      <label for="service">Service Requested & Details</label>
+      <textarea name="service" id="service" rows="4" placeholder="e.g. House clearance next Monday..." required></textarea>
+
+      <input type="hidden" name="_subject" value="New Booking Request from Website">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact Harry | 📞 07432 534390 | ✉️ sswremovals@outlook.com</p>
+    <p>&copy; 2025 SSW Removals</p>
+  </footer>
+
+</body>
+</html>
