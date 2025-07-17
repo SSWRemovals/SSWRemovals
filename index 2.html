@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SSW Removals</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f7, #d9e2ec);
+      color: #333;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #1a3c7c;
+    }
+
+    header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      color: #5a5a5a;
+    }
+
+    .services {
+      margin: 40px auto;
+      padding: 20px;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.2em;
+    }
+
+    .services li {
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .services li:last-child {
+      border-bottom: none;
+    }
+
+    .contact-form {
+      margin: 40px auto;
+      max-width: 600px;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #1a3c7c;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #1a3c7c;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #16315f;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SSW Removals</h1>
+    <p>These are the services we provide — get in touch</p>
+  </header>
+
+  <div class="services">
+    <ul>
+      <li>House Removals</li>
+      <li>Man with Van Services</li>
+      <li>DIY and Building Waste Removals</li>
+      <li>Carpet and Shed Removals</li>
+    </ul>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mnqeqrzz" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <input type="date" name="preferred_date" required><br>
+      <input type="time" name="preferred_time" required><br>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+
+</body>
+</html>
